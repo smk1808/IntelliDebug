@@ -14,7 +14,6 @@ async def analyze_project(file: UploadFile = File(...)):
         content = await file.read()
         tmp.write(content)
         tmp_path = tmp.name
-
     results = analyze_project_zip(tmp_path)
 
     return {
