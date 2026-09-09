@@ -2,7 +2,6 @@ from fastapi import APIRouter, UploadFile, File
 from services.code_fixer import fix_code
 
 router = APIRouter()
-
 @router.post("/fix")
 async def fix(file: UploadFile = File(...)):
 
