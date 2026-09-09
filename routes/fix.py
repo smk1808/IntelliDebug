@@ -8,7 +8,6 @@ async def fix(file: UploadFile = File(...)):
 
     code = await file.read()
     code = code.decode("utf-8")
-
     fixed = fix_code(code)
 
     return {
