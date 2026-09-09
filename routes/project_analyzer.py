@@ -11,7 +11,6 @@ def analyze_project_zip(zip_path):
     results = []
 
     with tempfile.TemporaryDirectory() as temp_dir:
-
         with zipfile.ZipFile(zip_path, 'r') as zip_ref:
             zip_ref.extractall(temp_dir)
 
