@@ -19,7 +19,6 @@ def analyze_project_zip(zip_path):
 
                 if file.endswith(".py"):
                     file_path = os.path.join(root, file)
-
                     with open(file_path, "r", encoding="utf-8") as f:
                         code = f.read()
 
