@@ -6,7 +6,6 @@ router = APIRouter(tags=["GitHub Analysis"])
 @router.post("/analyze-github")
 
 def analyze_github(data: dict):
-
     repo_url = data["repo_url"]
 
     results = analyze_github_repo(repo_url)
