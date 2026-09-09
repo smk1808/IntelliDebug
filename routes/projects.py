@@ -5,7 +5,6 @@ from services.project_analyzer import analyze_project_zip
 
 router = APIRouter(tags=["Project Analysis"])
 
-
 @router.post("/analyze-project")
 async def analyze_project(file: UploadFile = File(...)):
     with tempfile.NamedTemporaryFile(delete=False) as tmp:
