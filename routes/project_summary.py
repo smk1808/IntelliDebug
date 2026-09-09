@@ -7,7 +7,6 @@ def generate_project_summary(results):
 
     prompt = f"""
 You are a senior software architect.
-
 Analyze the following project scan results and produce a health report.
 
 Results:
