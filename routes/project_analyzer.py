@@ -8,7 +8,6 @@ from services.performance_analyzer import analyze_performance
 
 
 def analyze_project_zip(zip_path):
-
     results = []
 
     with tempfile.TemporaryDirectory() as temp_dir:
