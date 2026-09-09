@@ -10,7 +10,6 @@ async def analyze(file: UploadFile = File(...)):
 
     code = await file.read()
     code = code.decode("utf-8")
-
     bugs = detect_bugs(code)
     security = scan_security(code)
     performance = analyze_performance(code)
