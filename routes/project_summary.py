@@ -13,7 +13,6 @@ Results:
 {results}
 
 Return:
-
 Project Health Score (0–100)
 Security Risk Level
 Main Problems
