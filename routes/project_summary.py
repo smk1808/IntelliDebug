@@ -18,7 +18,6 @@ Security Risk Level
 Main Problems
 Recommendations
 """
-
     response = client.chat.completions.create(
         model="llama-3.1-8b-instant",
         messages=[
