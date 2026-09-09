@@ -15,7 +15,6 @@ def analyze_project_zip(zip_path):
             zip_ref.extractall(temp_dir)
 
         for root, dirs, files in os.walk(temp_dir):
-
             for file in files:
 
                 if file.endswith(".py"):
