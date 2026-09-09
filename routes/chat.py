@@ -9,7 +9,6 @@ def chat(data: dict):
 
     question = data["question"]
     codebase = data["codebase"]
-
     answer = chat_with_codebase(question, codebase)
 
     return {"answer": answer}
