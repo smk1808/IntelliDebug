@@ -9,7 +9,6 @@ router = APIRouter(tags=["Project Analysis"])
 @router.post("/analyze-project")
 async def analyze_project(file: UploadFile = File(...)):
     with tempfile.NamedTemporaryFile(delete=False) as tmp:
-
         content = await file.read()
         tmp.write(content)
         tmp_path = tmp.name
